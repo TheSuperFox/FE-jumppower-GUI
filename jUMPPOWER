@@ -1,0 +1,225 @@
+-- Instances: 21 | Scripts: 3 | Modules: 0
+local G2L = {};
+
+-- StarterGui.JumpPowerGUI
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[JumpPowerGUI]];
+
+-- StarterGui.JumpPowerGUI.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0, 276, 0, 156);
+G2L["2"]["Position"] = UDim2.new(0.07479, 0, 0.05263, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Main]];
+G2L["2"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.JumpPowerGUI.Main.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.JumpPowerGUI.Main.TextLabel
+G2L["4"] = Instance.new("TextLabel", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Size"] = UDim2.new(0, 303, 0, 27);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[JumpPowerGUI]];
+G2L["4"]["Position"] = UDim2.new(-0.0471, 0, 0, 0);
+
+-- StarterGui.JumpPowerGUI.Main.TextLabel.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+
+
+-- StarterGui.JumpPowerGUI.Main.TextBox
+G2L["6"] = Instance.new("TextBox", G2L["2"]);
+G2L["6"]["CursorPosition"] = -1;
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["PlaceholderColor3"] = Color3.fromRGB(139, 17, 17);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(195, 0, 0);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["PlaceholderText"] = [[Enter JumpPower...]];
+G2L["6"]["Size"] = UDim2.new(0, 160, 0, 36);
+G2L["6"]["Position"] = UDim2.new(0.07609, 0, 0.32051, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[]];
+
+-- StarterGui.JumpPowerGUI.Main.TextBox.UICorner
+G2L["7"] = Instance.new("UICorner", G2L["6"]);
+
+
+-- StarterGui.JumpPowerGUI.Main.Apply
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(149, 0, 0);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 160, 0, 35);
+G2L["8"]["Name"] = [[Apply]];
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Apply!]];
+G2L["8"]["Position"] = UDim2.new(0.07609, 0, 0.64744, 0);
+
+-- StarterGui.JumpPowerGUI.Main.Apply.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+
+
+-- StarterGui.JumpPowerGUI.Main.CreditsButton
+G2L["a"] = Instance.new("TextButton", G2L["2"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(149, 0, 0);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 72, 0, 86);
+G2L["a"]["Name"] = [[CreditsButton]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Credits]];
+G2L["a"]["Position"] = UDim2.new(0.71014, 0, 0.32051, 0);
+
+-- StarterGui.JumpPowerGUI.Main.CreditsButton.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["a"]);
+
+
+-- StarterGui.JumpPowerGUI.Credits
+G2L["c"] = Instance.new("Frame", G2L["1"]);
+G2L["c"]["Visible"] = false;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Size"] = UDim2.new(0, 276, 0, 156);
+G2L["c"]["Position"] = UDim2.new(0.07479, 0, 0.27193, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[Credits]];
+G2L["c"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.JumpPowerGUI.Credits.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+
+
+-- StarterGui.JumpPowerGUI.Credits.TextLabel
+G2L["e"] = Instance.new("TextLabel", G2L["c"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Italic);
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["Size"] = UDim2.new(0, 303, 0, 27);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[Credits]];
+G2L["e"]["Position"] = UDim2.new(-0.0471, 0, 0, 0);
+
+-- StarterGui.JumpPowerGUI.Credits.TextLabel.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+
+
+-- StarterGui.JumpPowerGUI.Credits.TextLabel
+G2L["10"] = Instance.new("TextLabel", G2L["c"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Size"] = UDim2.new(0, 200, 0, 32);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[UI - MRwat0]];
+G2L["10"]["Position"] = UDim2.new(0.13768, 0, 0.29487, 0);
+
+-- StarterGui.JumpPowerGUI.Credits.TextLabel
+G2L["11"] = Instance.new("TextLabel", G2L["c"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["Size"] = UDim2.new(0, 200, 0, 32);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[Code - Roblox AI]];
+G2L["11"]["Position"] = UDim2.new(0.13768, 0, 0.5, 0);
+
+-- StarterGui.JumpPowerGUI.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.JumpPowerGUI.JumpPowerChangeScript
+G2L["13"] = Instance.new("LocalScript", G2L["1"]);
+G2L["13"]["Name"] = [[JumpPowerChangeScript]];
+
+-- StarterGui.JumpPowerGUI.Holding
+G2L["14"] = Instance.new("BoolValue", G2L["1"]);
+G2L["14"]["Name"] = [[Holding]];
+
+-- StarterGui.JumpPowerGUI.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.JumpPowerGUI.LocalScript
+local function C_12()
+local script = G2L["12"];
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Credits")
+	local Button = SGui.Main:WaitForChild("CreditsButton")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+end;
+task.spawn(C_12);
+-- StarterGui.JumpPowerGUI.JumpPowerChangeScript
+local function C_13()
+local script = G2L["13"];
+	local jumpPowerGui = script.Parent
+	local applyButton = jumpPowerGui.Main.Apply
+	local jumpPowerTextBox = jumpPowerGui.Main.TextBox
+	
+	-- Function to change the player's jump power
+	local function changeJumpPower()
+	    local jumpPowerValue = tonumber(jumpPowerTextBox.Text)
+	    if jumpPowerValue then
+	        local player = game.Players.LocalPlayer
+	        if player and player.Character then
+	            local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+	            if humanoid then
+	                humanoid.JumpPower = jumpPowerValue
+	            end
+	        end
+	    else
+	        warn("Invalid jump power value entered.")
+	    end
+	end
+	
+	-- Connect the button click event to the changeJumpPower function
+	applyButton.MouseButton1Click:Connect(changeJumpPower)
+end;
+task.spawn(C_13);
+-- StarterGui.JumpPowerGUI.LocalScript
+local function C_15()
+local script = G2L["15"];
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	
+	mouse.Button1Down:Connect(function()
+		script.Parent.Holding.Value = true
+	end)
+	
+	mouse.Button1Up:Connect(function()
+		script.Parent.Holding.Value = false
+	end)
+	
+	mouse.Move:Connect(function()
+		if script.Parent.Holding.Value == true then
+			script.Parent.Main.Position = UDim2.new(0,mouse.X,0,mouse.Y)
+		end
+	end)
+end;
+task.spawn(C_15);
+
+return G2L["1"], require;
